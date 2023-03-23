@@ -2,7 +2,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: seagreen;
+    --accent: #fbba72;
   }
 }
 *, *:before, *:after {
@@ -12,6 +12,8 @@ body {
   line-height: 1.7;
   font-size: 1.4rem;
   grid-template-columns: 1fr 6fr 1fr;
+  background-color: #3c1001;
+
 }
 body > div {
   display: grid;
@@ -23,7 +25,7 @@ article, aside {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 1.2em auto .5em auto;
-  color:seagreen;
+  color:#fbba72;
 }
 .container {
   display: flex;

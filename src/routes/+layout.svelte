@@ -4,11 +4,8 @@
 
 <nav class="main-nav">
   <a href="/">Home</a>
-  <a href="/posts">Posts</a>
-  <a href="/favs">Favs</a>
-  <a href="/info">Info</a>
+  <a href="/wows">Wows</a>
   <a href="/about">About</a>
-  <a href="/donate">Donate</a>
 </nav>
 
 <main>
@@ -24,8 +21,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: .5em;
-    background-color:honeydew;
-    color: seagreen;
+    background-color: #691E06;
+    color: #fbba72;
   }
   nav {
     font-weight: 900;
@@ -34,7 +31,7 @@
   main {
     grid-row: 2;
     padding: 0 2rem;
-    background-color: rgba(255,255,255,.05);
+    background-color: #8F250C;
   }
   footer {
     font-size: 75%;
