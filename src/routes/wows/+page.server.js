@@ -9,32 +9,45 @@
 
 // Eric's fetch function
 
-// my fetch function
-export async function load({ fetch }) {  
-  // const year = Math.floor(Math.random() * 10000) + 1;
-  const year = 2010;
+// export async function load({ fetch }) {  
+//   // const year = Math.floor(Math.random() * 10000) + 1;
+//   const year = 2010;
 
-  const url = 'https://owen-wilson-wow-api.onrender.com/wows/random?results=2&year=' + year;
+//   const url = 'https://owen-wilson-wow-api.onrender.com/wows/random?results=2&year=' + year;
 
-  const wowReq = await fetch(url);
+//   const wowReq = await fetch(url);
   
-  const wowRes = await wowReq.json();
+//   const wowRes = await wowReq.json();
 
-  const wows = wowRes.data;
+//   const wows = wowRes.data;
 
-  return {
-    wows
-  }
+//   return {
+//     wows
+//   }
 
-}
+// }
 
 // _______________________________________________________________________________________________
 
-// Example on API's website
 
-// const options = {method: 'GET', headers: {accept: 'application/json'}};
+// ?pageSize
+// ?page
+// ?
 
-// fetch('https://owen-wilson-wow-api.onrender.com/wows/random?results=2&year=2010', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
+export async function load({ fetch }) {  
+  const page = Math.floor(Math.random() * 100) + 1;
+
+  const url = 'https://api.disneyapi.dev/characters?page=' + page + '&pageSize=27';
+  
+
+  const artReq = await fetch(url);
+  
+  const artRes = await artReq.json();
+
+  const artworks = artRes.data;
+
+  return {
+    artworks
+  }
+
+}

@@ -4,7 +4,7 @@
 
 <nav class="main-nav">
   <a href="/">Home</a>
-  <a href="/wows">Wows</a>
+  <a href="/wows">Data</a>
   <a href="/about">About</a>
 </nav>
 
