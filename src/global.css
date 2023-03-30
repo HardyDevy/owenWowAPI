@@ -2,17 +2,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: #fbba72;
+    --accent: #fafafa;
   }
 }
 *, *:before, *:after {
   box-sizing: border-box;
 }
+main{
+  text-align: center;
+}
 body {
   line-height: 1.7;
   font-size: 1.4rem;
   grid-template-columns: 1fr 6fr 1fr;
-  background-color: #3c1001;
+  background-color: #091723;
 
 }
 body > div {
@@ -25,13 +28,14 @@ article, aside {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 1.2em auto .5em auto;
-  color:#fbba72;
+  color: var(--accent);
 }
 .container {
   display: flex;
 }
 article {
   flex: 1 0 68%;
+  
 }
 aside {
   margin-top: 3rem;
@@ -39,4 +43,21 @@ aside {
 }
 a {
   text-decoration: none;
+}
+button{
+  background-color: var(--accent);
+  border-radius: 10px;
+  border:none;
+  margin: 0rem 0 1rem 0;
+  padding: 1rem 2rem;
+  font-family: "bd-supper", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+button:hover{
+  background-color: #848484 !important;
+}
+article{
+  background-color: #1f3d5e;
+  border-radius: 10px;
 }

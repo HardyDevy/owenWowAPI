@@ -1,3 +1,4 @@
 <h1>About</h1>
 <hr>
-<p>Using a publicly available API this site showcases something but not Owen Wilson saying "Wow!" because that API just didn't work for some reason.</p>
+<p>Using a publicly available API, this site showcases an enormous amount of characters from various Disney media and gives some information about them.</p>
+<p>Created by Devon Hardy, a super smart and cool web designer not yet in his prime.</p>

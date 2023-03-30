@@ -4,7 +4,8 @@
 
 <nav class="main-nav">
   <a href="/">Home</a>
-  <a href="/wows">Data</a>
+  <a href="/search">Search</a>
+  <a href="/random">Random</a>
   <a href="/about">About</a>
 </nav>
 
@@ -21,8 +22,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: .5em;
-    background-color: #691E06;
-    color: #fbba72;
+    background-color: #2A628F;
+    color: #e9f2ff;
   }
   nav {
     font-weight: 900;
@@ -31,7 +32,7 @@
   main {
     grid-row: 2;
     padding: 0 2rem;
-    background-color: #8F250C;
+    background-color: #16324F;
   }
   footer {
     font-size: 75%;
