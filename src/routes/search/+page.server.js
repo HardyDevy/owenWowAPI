@@ -1,14 +1,13 @@
-// let searchbar = document.getElementById('searching');
-  // searchbar.addEventListener('change', () => {
-  //   let name = searchbar.value;
-  // });
+
+import { iWant } from './stores.js';
+// console.log({$iWant});
 
 export async function load({ fetch }) {  
-  
-  let name = "Santa"
+
+  let name = iWant;
 
   const url = 'https://api.disneyapi.dev/character?name=' + name;
-  
+
   const artReq = await fetch(url);
   const artRes = await artReq.json();
   const artworks = artRes.data;
@@ -16,5 +15,4 @@ export async function load({ fetch }) {
   return {
     artworks
   }
-
 }

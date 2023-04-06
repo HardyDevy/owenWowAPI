@@ -14,7 +14,7 @@ main{
 body {
   line-height: 1.7;
   font-size: 1.4rem;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 0fr 7fr 0fr;
   background-color: #091723;
 
 }
@@ -37,10 +37,6 @@ article {
   flex: 1 0 68%;
   
 }
-aside {
-  margin-top: 3rem;
-  flex: 1 0 32%;
-}
 a {
   text-decoration: none;
 }
@@ -48,7 +44,7 @@ button{
   background-color: var(--accent);
   border-radius: 10px;
   border:none;
-  margin: 0rem 0 1rem 0;
+  margin: 0rem 0 1.5rem 0;
   padding: 1rem 2rem;
   font-family: "bd-supper", sans-serif;
   font-weight: 700;
@@ -60,4 +56,9 @@ button:hover{
 article{
   background-color: #1f3d5e;
   border-radius: 10px;
+}
+
+hr{
+  border: 1px solid;
+  width: 80%;
 }

@@ -3,20 +3,19 @@
   const {artworks} = data;
 
  function handleRefreshClick() {location.reload();}
+
 </script>
 
-<h1>Characters</h1>
+<h1>Random Characters</h1>
 
-<!-- <button on:click={handleRefreshClick}>New Characters!</button> -->
+
+<button on:click={handleRefreshClick}>New Characters!</button>
 
 <article class="bottomgrid">
-  <p></p>
-  <button on:click={handleRefreshClick}>New Characters!</button>
-  <p></p>
   {#each artworks as { name, imageUrl, tvShows, films}}
   <figure>
     <img src="{imageUrl}" alt="">
-    <figcaption><strong>{name}</strong> <p>Appears in: {tvShows[0]}, {films[0]}</p> </figcaption>
+    <figcaption><strong>{name}</strong> <p>Appears in: {films} {tvShows}</p> </figcaption>
   </figure>
   {/each}
 </article>
