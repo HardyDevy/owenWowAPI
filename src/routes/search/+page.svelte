@@ -1,11 +1,7 @@
 
 <script>
   import { iWant } from './stores.js';
-
-  const handleInput = (e) => {
-   iWant.set(e.target.value);
-   console.log({$iWant});
- };
+  import Searchbar from './searchbar.svelte';
 
   const changeSearch = (e2) => {
     document.getElementById("searching").value = e2.target.text;
@@ -13,12 +9,30 @@
 
   export let data;
   const {artworks} = data;
+
+// async function load({ fetch }) {  
+
+//   let name = {$iWant};
+
+//   const url = 'https://api.disneyapi.dev/character?name=' + name;
+
+//   const artReq = await fetch(url);
+//   const artRes = await artReq.json();
+//   const artworks = artRes.data;
+
+//   return {
+//     artworks
+// }
+// }
+
+// let data;
+// const {artworks} = data;
+
 </script>
 
 <h1>Character Search</h1>
 
-<input type="text" id="searching" on:input={handleInput} placeholder="Search for a Character...">
-
+<Searchbar/>
 
 <div class="container">
 
@@ -48,35 +62,33 @@
 </div>
 
 
-  <style>
-    aside {
-    background-color: #1f3d5e;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 20rem;
-    }
-    .examplesearches{
-      align-items: center;
-    }
-    a{
-      color: #ababab;
-      margin-bottom: .55rem;
-    }
+<style>
+  aside {
+  background-color: #1f3d5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 20rem;
+  }
+  .examplesearches{
+    align-items: center;
+  }
+  a{
+    color: #ababab;
+    margin-bottom: .55rem;
+  }
 
-    h4{
-      margin-bottom: .5rem;
-    }
-    
-    img {height: 13rem;}
+  h4{
+    margin-bottom: .5rem;
+  }
+  
+  img {height: 13rem;}
 
-    input{max-width: 20rem; margin-bottom: 1.5rem;}
-
-    .bottomgrid{
-    display: grid;
-    grid-gap: 2rem;
-    grid-auto-rows: max-content;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    }
-  </style>
+  .bottomgrid{
+  display: grid;
+  grid-gap: 2rem;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  }
+</style>

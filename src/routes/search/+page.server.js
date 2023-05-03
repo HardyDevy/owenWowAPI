@@ -1,10 +1,10 @@
 
-import { iWant } from './stores.js';
-// console.log({$iWant});
+// import { iWant } from './stores.js';
 
 export async function load({ fetch }) {  
 
-  let name = iWant;
+  // let name = {$iWant};
+  let name = "bob the dog";
 
   const url = 'https://api.disneyapi.dev/character?name=' + name;
 
@@ -16,3 +16,4 @@ export async function load({ fetch }) {
     artworks
   }
 }
+
